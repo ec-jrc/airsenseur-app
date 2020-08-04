@@ -1,0 +1,40 @@
+<ion-view id="pollutants">
+    <ion-nav-bar class="header about" align-title="center">
+        <ion-nav-back-button class="headerBackButton">
+        </ion-nav-back-button>
+        <ion-nav-title>
+            Air pollutants
+        </ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button id="headerMenuButton" class="button button-icon ion-navicon" ng-click='appCtrl.isHeaderMenuOpen = !appCtrl.isHeaderMenuOpen'></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content scroll="true" overflow-scroll="false" padding="false">
+        <div class="intro">
+            <p>The AirSenseEUR network measures four pollutants in its current configuration: nitrogen monoxide, nitrogen dioxide, carbon monoxide, and ozone.</p>
+        </div>
+        <ion-list>
+            <div ng-repeat="pollutant in pollutants" class="itemContainer">
+                <ion-item ng-click="toggleGroup(pollutant)" class="main row" ng-class="{'main-active' : isGroupShown(pollutant)}">
+                    <div class="col img center">
+                        <img ng-src="img/icons/{{pollutant.icon}}{{isGroupShown(pollutant) ? '-active' : ''}}.svg">
+                    </div>
+                    <div class="col-80 label center">
+                        {{pollutant.label}} ({{pollutant.formula}})
+                    </div>
+                </ion-item>
+                <div class="accordion" ng-if="isGroupShown(pollutant)">
+                    <h4>Source</h4>
+                    <p>{{pollutant.source}}</p>
+                    <h4>Effects</h4>
+                    <p>{{pollutant.effects}}</p>
+                    <h4>Limit values</h4>
+                    <p>{{pollutant.limitValues}}</p>
+                    <div class="viewMap" native-ui-sref="app.map({label_phenomenon: pollutant.label})">
+                        View on map <img src="img/marker.svg">
+                    </div>
+                </div>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

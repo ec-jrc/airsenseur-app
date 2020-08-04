@@ -1,0 +1,32 @@
+<ion-view id="linksPage">
+    <ion-nav-bar class="header about" align-title="center">
+        <ion-nav-back-button class="headerBackButton">
+        </ion-nav-back-button>
+        <ion-nav-title>
+            Links
+        </ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button id="headerMenuButton" class="button button-icon ion-navicon" ng-click='appCtrl.isHeaderMenuOpen = !appCtrl.isHeaderMenuOpen'></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content scroll="true" overflow-scroll="true" padding="false">
+        <div class="container row">
+            <div class="row links">
+                <div class="col col-10 center icon">
+                    <img src="img/links.svg">
+                </div>
+                <div class="col text" bind-unsafe-html="dynamicContent">
+                    <!-- <p class="textAlignCenter bold"><img src="img/links.svg"> AirSensEUR</p>
+                    <p><a href="#http://www.airsenseur.org">AirSensEUR</a> is an open hardware/software framework focused on air quality monitoring using low cost sensors. The framework can support multiple sensors measuring different meteorological parameters, such as temperature, atmospheric pressure, and relative humidity, and pollutants. In its current configuration the platform measures four pollutants:</p>
+                    <ol>
+                        <li>Carbon monoxide</li>
+                        <li>Nitrogen monoxide</li>
+                        <li>Nitrogen dioxide</li>
+                        <li>Ozone</li>
+                    </ol><br/>
+                    <p>If you select a different network of sensors from AirSenseEUR, then the app will display whatever parameters are collected and published by that network.</p> -->
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

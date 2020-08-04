@@ -1,0 +1,33 @@
+<ion-view id="about">
+    <ion-nav-bar class="header about" align-title="center">
+        <ion-nav-back-button class="headerBackButton">
+        </ion-nav-back-button>
+        <ion-nav-title>
+            About the app
+        </ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button id="headerMenuButton" class="button button-icon ion-navicon" ng-click='appCtrl.isHeaderMenuOpen = !appCtrl.isHeaderMenuOpen'></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content scroll="true" overflow-scroll="true" padding="false">
+        <div class="container row">
+            <div class="row aboutText">
+                <div class="col col-10 center icon">
+                    <img src="img/information.svg">
+                </div>
+                <div class="col text" bind-unsafe-html="dynamicContent">
+                   <!--  <p class="textAlignCenter bold"><img src="img/information.svg"> About the application</p>
+                    <p>This app has been developed by the Joint Research Centre (JRC), the in-house science service of the European Commission. Its aim is to enable the general public (amateurs or professionals) to receive and share information about the quality of ambient air. Specifically, the app’s purposes are:</p>
+                    <ul>
+                        <li>to inform users about the quality of ambient air;</li>
+                        <li>to notify users in case of an exceedance of pre-set pollution tresholds;</li>
+                        <li>to display data from the air-sensing platform developed by the JRC (AirSenseEUR) or by other sensor networks that publish their data using sensor observation services compliant with the <a ng-click="openExternalLink('http://inspire.ec.europa.eu/index.cfm')">Inspire directive</a>.</li>
+                    </ul>
+                    <p>
+                    This app is developed as part of the <a ng-click="openExternalLink('http://digitalearthlab.jrc.ec.europa.eu/mygeoss')">Mygeoss project</a>, which has received funding from the European Union’s Horizon 2020 research and innovation programme. The project aims to develop smart internet applications to inform and engage European citizens about the changes affecting their environment, and extend the pool of open source software and open data available to the global community through the <a ng-click="openExternalLink('http://earthobservations.org/index.php')">Global Earth Observation System of Systems</a>.
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

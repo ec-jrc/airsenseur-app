@@ -1,0 +1,14 @@
+<div id="internalNotif" ng-show="appCtrl.isOnline != true">
+	<div class="inner center"><i class="ion-android-warning"></i> {{::offlineMessage}}</div>
+</div>
+
+<div id="headerMenu" ng-show="appCtrl.isHeaderMenuOpen === true" click-outside="appCtrl.isHeaderMenuOpen = false" outside-if-not="headerMenuButton">
+	<ul>
+		<li ng-click="openMenuModal('acknowledgement')">Acknowledgement</li>
+		<li ng-click="openMenuModal('disclaimer')">Disclaimer</li>
+		<li ng-click="openMenuModal('legalNotice')">Legal notice</li>
+		<li ng-click="openMenuModal('privacyStatement')">Privacy statement</li>
+	</ul>
+</div>
+<ion-nav-view name="mainContent">
+</ion-nav-view>

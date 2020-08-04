@@ -1,0 +1,43 @@
+<ion-view id="home">
+  <ion-nav-bar class="header home" align-title="center">
+    <!-- <ion-nav-back-button class="customBackButton"> -->
+    <!-- </ion-nav-back-button> -->
+    <ion-nav-title>
+      SenseEurAir
+    </ion-nav-title>
+    <ion-nav-buttons side="right">
+      <button id="headerMenuButton" class="button button-icon ion-navicon" ng-click='appCtrl.isHeaderMenuOpen = !appCtrl.isHeaderMenuOpen'></button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content class="padding" scroll="true" overflow-scroll='true'>
+    <section class="home-container">
+      <div class="row">
+        <div class="col-50 text-center">
+          <a native-ui-sref="app.meteo"><img src="img/home_meteo_parameters.svg" class="main-menu__button"></a>
+        </div>
+        <div class="col-50 text-center">
+          <a native-ui-sref="app.pollutants"><img src="img/home_air_pollutants.svg" class="main-menu__button"></a>
+        </div>
+        <div class="col-50 text-center">
+          <a native-ui-sref="app.map({label_phenomenon: '-1'})"><img src="img/home_sensors_map.svg" class="main-menu__button"></a>
+        </div>
+        <div class="col-50 text-center">
+          <a native-ui-sref="app.about"><img src="img/home_about.svg" class="main-menu__button"></a>
+        </div>
+        <div class="col-50 text-center">
+          <a native-ui-sref="app.alerts"><img src="img/home_alerts.svg" class="main-menu__button"></a>
+        </div>
+        <div class="col-50 text-center">
+          <a native-ui-sref="app.network"><img src="img/home_monitoring_networks.svg" class="main-menu__button"></a>
+        </div>
+        <div class="col-50 text-center">
+          <a native-ui-sref="app.links"><img src="img/home_links.svg" class="main-menu__button"></a>
+        </div>
+        <div class="col-50 text-center">
+          <a native-ui-sref="app.contact"><img src="img/home_contact.svg" class="main-menu__button"></a>
+        </div>
+      </div>
+    </section>
+  </ion-content>
+</ion-view>

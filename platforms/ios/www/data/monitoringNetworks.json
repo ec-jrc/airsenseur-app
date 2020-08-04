@@ -1,0 +1,399 @@
+{
+    "monitoringNetworks": [{
+        "APIurl": "https://aqsens.52north.org/data/reference/api/",
+        "label": "AirSensEUR (JRC Ispra)",
+        "flag": "European-Union.png",
+        "defaultSelected": "true",
+        "airParamsMapping": {
+            "Nitrogen monoxide": {
+                "id": "11",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Nitrogen dioxide": {
+                "id": "12",
+                "distance": "0.100",
+                "treshold": "400",
+                "tresholdUnit": "ppm",
+                "averagingPeriod": "3 hours",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach this Infomation treshold defined by the European Union Air Quality Directive (2008/50/EC) if the   remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "Carbon monoxide": {
+                "id": "10",
+                "distance": "0.250",
+                "treshold": "8.11",
+                "tresholdUnit": "ppm",
+                "averagingPeriod": "maximum daily 8-hour mean",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the @@averagingPeriod@@ remains above @@treshold@@."
+            },
+            "Ozone": {
+                "id": "8",
+                "distance": "1",
+                "treshold": "180",
+                "tresholdUnit": "ppm",
+                "averagingPeriod": "1 hour",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the mean concentration remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "PM10": {
+                "id": "",
+                "distance": "0.100",
+                "treshold": "50",
+                "tresholdUnit": "ppm",
+                "averagingPeriod": "24-hour mean",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the  @@averagingPeriod@@ remains above @@treshold@@ more than 35 times per year."
+            },
+            "Sulphur dioxide": {
+                "id": "",
+                "distance": "0.250",
+                "treshold": "400",
+                "tresholdUnit": "ppm",
+                "averagingPeriod": "3 hours",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach this Infomation treshold defined by the European Union Air Quality Directive (2008/50/EC) if the   remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "Temperature": {
+                "id": "14",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Atmospheric pressure": {
+                "id": "9",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Relative humidity": {
+                "id": "13",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            }
+        }
+    }, {
+        "APIurl": "https://geo.irceline.be/sos/api/v1/",
+        "label": "Belgium",
+        "flag": "Belgium.png",
+        "defaultSelected": "false",
+        "airParamsMapping": {
+            "Nitrogen monoxide": {
+                "id": "38",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Nitrogen dioxide": {
+                "id": "8",
+                "distance": "0.100",
+                "treshold": "400",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "3 hours",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach this Infomation treshold defined by the European Union Air Quality Directive (2008/50/EC) if the   remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "Carbon monoxide": {
+                "id": "10",
+                "distance": "0.250",
+                "treshold": "8.11",
+                "tresholdUnit": "mg/m3",
+                "averagingPeriod": "maximum daily 8-hour mean",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the @@averagingPeriod@@ remains above @@treshold@@."
+            },
+            "Ozone": {
+                "id": "7",
+                "distance": "1",
+                "treshold": "180",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "1 hour",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the mean concentration remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "PM10": {
+                "id": "5",
+                "distance": "0.100",
+                "treshold": "50",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "24-hour mean",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the  @@averagingPeriod@@ remains above @@treshold@@ more than 35 times per year."
+            },
+            "Sulphur dioxide": {
+                "id": "1",
+                "distance": "0.250",
+                "treshold": "400",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "3 hours",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach this Infomation treshold defined by the European Union Air Quality Directive (2008/50/EC) if the   remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "Temperature": {
+                "id": "62101",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Atmospheric pressure": {
+                "id": "",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Relative humidity": {
+                "id": "",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            }
+        }
+    }, {
+        "APIurl": "https://sensorweb.demo.52north.org/sensorwebclient-webapp-stable/api/v1/",
+        "label": "Sweden",
+        "flag": "Sweden.png",
+        "defaultSelected": "false",
+        "airParamsMapping": {
+            "Nitrogen monoxide": {
+                "id": "",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Nitrogen dioxide": {
+                "id": "",
+                "distance": "0.100",
+                "treshold": "400",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "3 hours",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach this Infomation treshold defined by the European Union Air Quality Directive (2008/50/EC) if the   remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "Carbon monoxide": {
+                "id": "",
+                "distance": "0.250",
+                "treshold": "8.11",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "maximum daily 8-hour mean",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the @@averagingPeriod@@ remains above @@treshold@@."
+            },
+            "Ozone": {
+                "id": "",
+                "distance": "1",
+                "treshold": "180",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "1 hour",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the mean concentration remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "PM10": {
+                "id": "",
+                "distance": "0.100",
+                "treshold": "50",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "24-hour mean",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the  @@averagingPeriod@@ remains above @@treshold@@ more than 35 times per year."
+            },
+            "Sulphur dioxide": {
+                "id": "",
+                "distance": "0.250",
+                "treshold": "400",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "3 hours",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach this Infomation treshold defined by the European Union Air Quality Directive (2008/50/EC) if the   remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "Temperature": {
+                "id": "",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Atmospheric pressure": {
+                "id": "",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Relative humidity": {
+                "id": "",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            }
+        }
+    }, {
+        "APIurl": "https://inspire.rivm.nl/sos/eaq/api/v1/",
+        "label": "Netherlands",
+        "flag": "Netherlands.png",
+        "defaultSelected": "false",
+        "airParamsMapping": {
+            "Nitrogen monoxide": {
+                "id": "125",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Nitrogen dioxide": {
+                "id": "130",
+                "distance": "0.100",
+                "treshold": "400",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "3 hours",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach this Infomation treshold defined by the European Union Air Quality Directive (2008/50/EC) if the   remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "Carbon monoxide": {
+                "id": "124",
+                "distance": "0.250",
+                "treshold": "8.11",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "maximum daily 8-hour mean",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the @@averagingPeriod@@ remains above @@treshold@@."
+            },
+            "Ozone": {
+                "id": "109",
+                "distance": "1",
+                "treshold": "180",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "1 hour",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the mean concentration remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "PM10": {
+                "id": "132",
+                "distance": "0.100",
+                "treshold": "50",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "24-hour mean",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the  @@averagingPeriod@@ remains above @@treshold@@ more than 35 times per year."
+            },
+            "Sulphur dioxide": {
+                "id": "123",
+                "distance": "0.250",
+                "treshold": "400",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "3 hours",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach this Infomation treshold defined by the European Union Air Quality Directive (2008/50/EC) if the   remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "Temperature": {
+                "id": "",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Atmospheric pressure": {
+                "id": "",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Relative humidity": {
+                "id": "",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            }
+        }
+    }, {
+        "APIurl": "https://data.smartemission.nl/sos52n/api/v1/",
+        "label": "City of Nijmegen",
+        "flag": "Netherlands.png",
+        "defaultSelected": "false",
+        "airParamsMapping": {
+            "Nitrogen monoxide": {
+                "id": "",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Nitrogen dioxide": {
+                "id": "3",
+                "distance": "0.100",
+                "treshold": "400",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "3 hours",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach this Infomation treshold defined by the European Union Air Quality Directive (2008/50/EC) if the   remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "Carbon monoxide": {
+                "id": "1",
+                "distance": "0.250",
+                "treshold": "8.11",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "maximum daily 8-hour mean",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the @@averagingPeriod@@ remains above @@treshold@@."
+            },
+            "Ozone": {
+                "id": "4",
+                "distance": "1",
+                "treshold": "180",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "1 hour",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the mean concentration remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "PM10": {
+                "id": "",
+                "distance": "0.100",
+                "treshold": "50",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "24-hour mean",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach the \"Type of Limits\" defined by the European Union Air Quality Directive (2008/50/EC) if the  @@averagingPeriod@@ remains above @@treshold@@ more than 35 times per year."
+            },
+            "Sulphur dioxide": {
+                "id": "",
+                "distance": "0.250",
+                "treshold": "400",
+                "tresholdUnit": "μg/m3",
+                "averagingPeriod": "3 hours",
+                "text": "A concentration of @@pollutant@@ exceeding @@treshold@@ was observed near you. It might breach this Infomation treshold defined by the European Union Air Quality Directive (2008/50/EC) if the   remains above @@treshold@@ for @@averagingPeriod@@."
+            },
+            "Temperature": {
+                "id": "10",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Atmospheric pressure": {
+                "id": "12",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            },
+            "Relative humidity": {
+                "id": "11",
+                "distance": "",
+                "treshold": "",
+                "tresholdUnit": "",
+                "averagingPeriod": "",
+                "text": ""
+            }
+        }
+    }],
+    "lastUpdate": 1589193161
+}

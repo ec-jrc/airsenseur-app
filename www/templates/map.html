@@ -1,0 +1,31 @@
+<ion-view id="sensorsMap">
+    <ion-nav-bar class="header about" align-title="center">
+        <ion-nav-back-button class="headerBackButton">
+        </ion-nav-back-button>
+        <ion-nav-title>
+            Sensors map
+        </ion-nav-title>
+    </ion-nav-bar>
+    <ion-content scroll="false" padding="false">
+        <div id="map" data-tap-disabled="true"></div>
+        <div class="mapInfo" data-tap-disabled="true">
+            <span class="stationTitle">{{additionnalInfo.selectedStation.properties.label}}</span>
+            <img src="img/arrow_up.svg" class="arrow" ng-if="!additionnalInfo.visible" ng-click="additionnalInfo.visible = true">
+            <img src="img/arrow_down.svg" class="arrow" ng-if="additionnalInfo.visible" ng-click="additionnalInfo.visible = false">
+            <div class="additionnalInfo row"  ng-if="additionnalInfo.contentSelected && additionnalInfo.visible">
+                <div class="col col-offset-10 col-80 center">
+                    <select name="phenomenon" id="phenomenonSelect" ng-model="additionnalInfo.selectedphenomenon"
+                        ng-options="phenomenon.label for phenomenon in additionnalInfo.listphenomenon track by phenomenon.id">
+                        <option value='' disabled>Select a phenomenon</option>
+                    </select>
+                </div>
+                <div class="col col-10">
+                    <img ng-src="img/btn-data{{additionnalInfo.selectedphenomenon === '' ? '-disabled' : ''}}.svg" ng-click="timeseries()">
+                </div>
+            </div>
+            <div class="additionnalInfo row center"  ng-if="!additionnalInfo.contentSelected && additionnalInfo.visible">
+                <span class="emptySelect">Select a station.</span>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,75 @@
+{
+	"pollutants":[
+		{	
+			"id": "11",
+			"label": "Nitrogen monoxide",
+			"formula": "NO",
+			"unit" : "ppm",
+			"source": "High temperature combustion processes (such as those occurring in car engines and power plants) are the major sources of nitrogen oxides, the term used to describe the sum of NO and NO2. In occupational situations both gases are mostly encountered together, with higher concentrations of NO which is the main component of the NOx emissions. NO is also manufactured for the production of nitric acid used in the synthesis of nitrate fertilisers. It is also used in nitration reactions and as a respiratory stimulant in hospital intensive care therapy.",
+			"effects": "Unlike NO2, NO is not an irritant gas. No major role is attributed to an oxidation of inhaled NO into NO2 in the lungs since, after inhalation, NO is eliminated faster than it is oxidised. Whereas emphysema-like alterations are the main acute toxic effects of NO2, vasodilatory effects and, at high concentrations, methaemoglobin (MetHb) formation, are observed in the case of NO but at concentration levels in the mg/m³ range that are generally not observed in ambient air.",
+			"limitValues": "Neither the European air quality directive nor the World Health Organisation have set any limit value for NO while the occupational exposure limits for human working conditions of NO corresponds to 2 ppm (parts per million) (8-hour, time weighted average).",
+			"description": "",
+			"icon": "chemistry"
+		},
+		{	
+			"id": "12",
+			"label": "Nitrogen dioxide",
+			"formula": "NO2",
+			"unit" : "ppm",
+			"source": "NO2 is a reactive gas that is mainly formed in the ambient air by oxidation of nitric oxide (NO). A small part of traffic emission is directly emitted as NO2. There are clear indications that the direct NO2 fraction coming from traffic emissions is increasing due to increased penetration of diesel vehicles, especially those with a particle filter.",
+			"effects": "Health effects of NO2 are seen both during short-term exposures (changes in lung function in susceptible groups) and long-term exposure (increased susceptibility to respiratory infection). Animal and human experimental studies indicate that NO2 — at short-term concentrations exceeding 200 µg/m³ — is a toxic gas with significant health effects.",
+			"limitValues": "In the European air quality directive (2008/50/EC), the NO2 limit value for long-term exposure is 40 µg/m³ (microgram per cubic metre) in a calendar year and 200 µg/m³ for hourly averages not to be exceeded more than 18 times a calendar year. The directive also set an alert treshold at 400 µg/m³ measured over three consecutive hours at locations representative of air quality over at least 100 km² or an entire zone or agglomeration, whichever is the smaller",
+			"description": "",
+			"icon": "chemistry"
+		},
+		{	
+			"id": "8",
+			"label": "Ozone",
+			"formula": "O3",
+			"unit" : "ppm",
+			"source": "NO3 at ground level — not to be confused with the O3 layer in the upper atmosphere — is one of the major constituents of photochemical smog. It is formed by the reaction with sunlight (photochemical reaction) of pollutants such as nitrogen oxides (NOx) from vehicle and industry emissions and volatile organic compounds (VOCs) emitted by vehicles, solvents and industry. As a result, the highest levels of O3 pollution occur during periods of sunny weather.",
+			"effects": "Excessive O3 can cause breathing problems, trigger asthma, reduce lung function and cause lung diseases. Several European studies have reported that the daily mortality rises by 0.3 % and that for heart diseases by 0.4 %, per 10 µg/m³ increase in ozone exposure.",
+			"limitValues": "In the European air quality directive (2008/50/EC), the O3 target value for the protection of human health is 120 µg/m³, maximum 8-hour time-weighted average, not to be exceeded on more than 25 days per calendar year averaged over 3 years. The long-term objective for the protection of human health is also 120 µg/m³, maximum daily 8-hour mean within a calendar year. The directive also set information and alert tresholds at 180 and 240 µg/m³, respectively, calculated as hourly averages measured over 3 consecutive hours.",
+			"description": "",
+			"icon": "chemistry"
+		},
+		{	
+			"id": "10",
+			"label": "Carbon monoxide",
+			"formula": "CO",
+			"unit" : "ppm",
+			"source": "CO is a gas emitted as a result of the incomplete combustion of fossil fuels and biofuels. Road transport was once a major source of CO emissions, but the introduction of catalytic converters reduced these emissions significantly.",
+			"effects": "Breathing the high concentrations of CO typical of a polluted environment leads to reduced oxygen (O2) transport by hemoglobin and has health effects that include headaches, increased risk of chest pain for persons with heart disease, and impaired reaction timing.",
+			"limitValues":  "In the European air quality directive (2008/50/EC), the CO limit value is set to 10 mg/m³ (milligram per cubic metre) as maximum daily 8-hour mean.",
+			"description": "",
+			"icon": "chemistry"
+		}
+	],
+	"meteo": [
+		{
+			"label": "Temperature",
+			"id": "14",
+			"unit":  "(in degrees centigrade)", 
+			"description": "",
+			"icon": "thermometer"
+		},
+		{
+			"label": "Atmospheric pressure",
+			"id": "9", 
+			"unit":  "(in hectoPascal)",
+			"description": "",
+			"icon": "pressure1"
+		},
+		{
+			"label": "Relative humidity", 
+			"id": "13",
+			"unit":  "(in %)",
+			"description": "",
+			"icon": "drop"
+		}
+	],
+	"lastUpdate": 1470217379
+}
+
+
+		

@@ -1,0 +1,55 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com.telerik.plugins.nativepagetransitions": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "cordova-plugin-datepicker": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "eu.europa.publications.senseeurair"
+    }
+  }
+}

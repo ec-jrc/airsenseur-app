@@ -1,0 +1,71 @@
+<ion-view id="timeseries">
+    <ion-nav-bar class="header about" align-title="center">
+        <ion-nav-back-button class="headerBackButton">
+        </ion-nav-back-button>
+        <ion-nav-title>
+            {{stationName}}
+        </ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button id="headerMenuButton" class="button button-icon ion-navicon" ng-click='appCtrl.isHeaderMenuOpen = !appCtrl.isHeaderMenuOpen'></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content scroll="false" overflow-scroll="true" padding="false">
+    	<div class="selectInput">
+	        <select name="phenomenon" id="phenomenonSelectTs" ng-model="timeSeries.selectedphenomenon"
+	            ng-options="phenomenon.label for phenomenon in timeSeries.listphenomenon track by phenomenon.id" ng-change="getRawData()">
+	            <option value='' disabled>Select a phenomenon</option>
+	        </select>
+	    </div>
+
+	    <div class="content">
+		    <div id="rawTab" ng-if="timeSeries.activeTab === 'raw'">
+			    <div class="row tableHeader">
+			    	<div class="col col-50">Time</div>
+			    	<div class="col col-50">{{timeSerie.uom}}</div>
+			    </div>
+			    <ion-scroll>
+					<ion-list>
+						<div ng-repeat="data in rawData track by $index" class="row" item-width="100%" item-height="40px">
+						<!-- collection repeat do not work in this case on Android... -->
+							<!-- <div class="col col-50 border">{{data[0] | date: 'yyyy/MM/dd HH:mm:ss'}}</div> -->
+							<div class="col col-50 border">{{data[0] | date: dateFormat.formatRawAngular}}</div>
+							<div class="col col-50">{{data[1]| number: (!isItTemperature() || '' && 1)}}</div> <!-- http://stackoverflow.com/questions/29738014/making-an-angular-filter-conditional -->
+						</div>
+					</ion-list>
+				</ion-scroll>
+			</div>
+
+			<div ng-if="timeSeries.activeTab === 'lineChart'" class="containerCart" data-tap-disabled="true">
+				<nvd3 options='lineChart.options' data='lineChart.data' config="config" api="api" on-swipe-left="touchEvent()" on-drag="dragEvent()"></nvd3>
+				<!-- <nvd3 options='lineChart.options' data='lineChart.data' config="config" api="api"></nvd3> -->
+			</div>
+			<!-- <nvd3 ng-if="timeSeries.activeTab === 'barChart'" options='barChart.options' data='barChart.data'></nvd3> -->
+		</div>
+		<!-- <button  class="button button-positive" ng-click="timeSeries.activeTab = 'raw'">RAW</button>
+		<button  class="button button-calm" ng-click="timeSeries.activeTab = 'lineChart'">LINECHART</button> -->
+		<div id="timeSeriesBottom">
+			<div class="buttonSection">
+				<img ng-src="img/btn-arraySection{{timeSeries.activeTab === 'raw' ? '-active' : ''}}.svg" ng-click="timeSeries.activeTab = 'raw'">
+				<img ng-src="img/btn-lineSection{{timeSeries.activeTab === 'lineChart' ? '-active' : ''}}.svg" ng-click="timeSeries.activeTab = 'lineChart'">
+				<!-- <img ng-src="img/btn-barSection{{timeSeries.activeTab === 'barChart' ? '-active' : ''}}.svg" ng-click="timeSeries.activeTab = 'barChart'"> -->
+				<!-- <img ng-src="img/btn-barSection{{timeSeries.activeTab === 'barChart' ? '-active' : ''}}.svg"> -->
+			</div>
+			<div class="dateInterval">
+				<div class="dateFrom center" ng-click="selectDate(dateFrom, 'from')">
+					<!-- {{dateFrom | date: timeFormatF(dateFrom, dateTo, 'button')}} -->
+					{{dateFrom | date: dateFormat.formatButtonAngular}}
+					<!-- <input type="date"> -->
+				</div>
+				<div class="dateTo center" ng-click="selectDate(dateTo, 'to')">
+					<!-- {{dateTo | date: timeFormatF(dateFrom, dateTo, 'button')}} -->
+					{{dateTo | date: dateFormat.formatButtonAngular}}
+				</div>
+				<button class="button" ng-click="newDataInterval(true)">OK</button>
+			</div>
+		</div>
+
+
+
+
+    </ion-content>
+</ion-view>

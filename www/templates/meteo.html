@@ -1,0 +1,33 @@
+<ion-view id="meteo">
+    <ion-nav-bar class="header about" align-title="center">
+        <ion-nav-back-button class="headerBackButton">
+        </ion-nav-back-button>
+        <ion-nav-title>
+            Meteorological params.
+        </ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button id="headerMenuButton" class="button button-icon ion-navicon" ng-click='appCtrl.isHeaderMenuOpen = !appCtrl.isHeaderMenuOpen'></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content scroll="true" overflow-scroll="false" padding="false">
+        <div class="intro">
+            <p>The AirSenseEUR network measures three meteorological parameters in its current configuration: temperature, atmospheric pressure, and relative humidity.</p>
+        </div>
+        <ion-list>
+            <div ng-repeat="meteo in meteos" class="itemContainer">
+                <ion-item ng-click="toggleGroup(meteo)" class="main row" ng-class="{'main-active' : isGroupShown(meteo)}">
+                    <div class="col img center">
+                        <img ng-src="img/icons/{{meteo.icon}}{{isGroupShown(meteo) ? '-active' : ''}}.svg">
+                    </div>
+                    <div class="col-80 label center">
+                        {{meteo.label}} {{meteo.unit}}
+                    </div>
+                </ion-item>
+                <div class="accordion" ng-if="isGroupShown(meteo)">
+                    <p>{{meteo.description}}</p>
+                    <div native-ui-sref="app.map({label_phenomenon: meteo.label})">View on map <img src="img/marker.svg"></div>
+                </div>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

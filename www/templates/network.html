@@ -1,0 +1,34 @@
+<ion-view id="network">
+    <ion-nav-bar class="header about" align-title="center">
+        <ion-nav-back-button class="headerBackButton">
+        </ion-nav-back-button>
+        <ion-nav-title>
+            Monitoring networks
+        </ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button id="headerMenuButton" class="button button-icon ion-navicon" ng-click='appCtrl.isHeaderMenuOpen = !appCtrl.isHeaderMenuOpen'></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content scroll="true" overflow-scroll="true" padding="false">
+        <div class="intro">
+            <p>Select one or more national air measuring network(s) for the application to connect to:</p>
+            <p class="information"><i class = "ion-ios-information-outline"></i> If you have chosen to visualise data from another sensing network, you may find that other parameters are displayed.</p>
+        </div>
+            <ul>
+                <li class="item item-toggle" ng-repeat="network in networks track by $index" ng-style="{'background-image': 'url(img/flag/{{network.flag}})'}">
+                    {{network.label}}
+                    <label class="toggle" ng-if="network.defaultSelected === 'false'">
+                        <!-- <input type="checkbox" ng-model="network.selected" ng-true-value="'true'" ng-false-value="'false'" ng-change="selectNetworks(network.id, )"> -->
+                        <input type="checkbox" ng-checked="network.selected === 'true'" ng-click="selectNetworks(network.id, network.selected, network.APIurl, $index)"> 
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                    <span ng-if="network.defaultSelected === 'true'">
+                        (Default)
+                    </span>
+                 </li>
+            </ul>
+        </ion-list>
+    </ion-content>
+</ion-view>

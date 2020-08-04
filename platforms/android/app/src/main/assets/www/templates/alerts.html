@@ -1,0 +1,33 @@
+<ion-view id="alerts">
+    <ion-nav-bar class="header about" align-title="center">
+        <ion-nav-back-button class="headerBackButton">
+        </ion-nav-back-button>
+        <ion-nav-title>
+            Alerts
+        </ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button id="headerMenuButton" class="button button-icon ion-navicon" ng-click='appCtrl.isHeaderMenuOpen = !appCtrl.isHeaderMenuOpen'></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content scroll="true" overflow-scroll="false" padding="false">
+        <div class="noAlert" ng-show="alerts.length == 0">
+            <div class="row center">
+                <div class="col">
+                    No alerts have been detected near your location. <i class="ion-checkmark-circled"></i>
+                </div>
+            </div>
+        </div>
+        <ion-list ng-show="alerts.length > 0">
+          <div class='row item-alert' collection-repeat="alert in alerts" ng-click="showConfirm(alert)"> 
+            <div class="col-10 icon center">
+                <img src="img/alert.svg">
+            </div>
+            <div class="col text center">
+                <p>{{alert.pollutant}}<br/>
+                <span class='time'>{{alert.timeAgo}}min ago</span>
+                </p>
+            </div>
+          </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
