@@ -8,11 +8,17 @@ Software Architecture Document: https://digitalearthlab.jrc.ec.europa.eu/sites/d
 
 ## Libraries
 The application includes Open Source dynamically linked libraries as follows.
+
 Cordova (Hooks/Sqlite Storage, including the plugins and modules android, common, device, geolocation, inappbrowser, ionic-webview, network-information, screen-orientation, splashscreen, statusbar, and whitelist) ASF License 2.0 (compatible with GNU GPL v3) https://www.apache.org/licenses/LICENSE-2.0
+
 Phonegap Mobile Accessibility ASF License 2.0 (compatible with GNU GPL v3) https://www.apache.org/licenses/LICENSE-2.0
+
 Sqlite Connector (including the module cordova-sqlite-storage-dependencies) Public Domain https://en.wikipedia.org/wiki/Public_domain and the plugin cordova-sqlite-storage MIT License https://opensource.org/licenses/MIT
+
 Angular MIT License https://opensource.org/licenses/MIT
+
 Ionic MIT License https://opensource.org/licenses/MIT
+
 Leaflet BSD-2-License / FreeBSD https://tldrlegal.com/license/bsd-2-clause-license-(freebsd)
 
 
